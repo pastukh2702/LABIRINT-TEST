@@ -1,0 +1,62 @@
+.play {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+.matrix {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.cell {
+    width: 10vw;
+    height: 10vw;
+    background: white;
+    border: 1px solid black;
+    transition: .3s;
+}
+.cell:hover {
+    background: rgba(255, 166, 0, 0.411);
+    transition: .3s;
+    cursor: pointer;
+}
+.ways {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+
+.ways p {
+    margin: 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p.waiting {
+    opacity: 0;
+    transition: 0.5s
+}
+p.done {
+    opacity: 1;
+    transition: 0.5s
+}
+
+h1.win {
+    background: rgba(3, 182, 3, 0.548)
+}
+h1.lose {
+    background: rgba(255, 0, 0, 0.548)
+}
+
+h2 {
+    transition: .3s;
+}
+h2:hover {
+    background: rgba(255, 166, 0, 0.411);
+    cursor: pointer;
+    transition: .3s;
+}
